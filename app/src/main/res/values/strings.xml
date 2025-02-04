@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Coinnect</string>
+    <string name="btn1">Aceptar</string>
+    <string name="bienvenida">Bienvenido a Coinnect</string>
+    <string name="acerca"> Bienvenido %s, Esta usando la version 1.0 de Coinnect</string>
+    <string name="btn2"> Soporte</string>
+    <string name="informacion"> Esta app tiene como finalidad el crear un espacio de comunidad donde comentar,publicar y discutir temas sobre
+    criptomonedas,tendencias,estrategias de inversion ademas de tener informacion en tiempo real del propio mercado de forma</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cuenta">Mi Cuenta</string>
+    <string name="fav">Favoritos</string>
+    <string name="btnback">Volver</string>
+    <string name="cryptoname">Crypto Name</string>
+    <string name="cryptoprice">Crypto Description</string>
+    <string name="price2">Price: $0</string>
+    <string name="notascrypto">Add your notes here</string>
+    <string name="btnguardar">Save Notes</string>
+    <string name="cryptolist">Listado de Cryptomonedas</string>
+    <string name="btnlist">Haga Click para ver listado</string>
+    <string name="txtuser">Ingrese su nombre de usuario</string>
+    <string name="btnlogin">Ingresar</string>
+    <string name="userdescripcion">Soy un apasionado de las criptomonedas y la tecnología.</string>
+    <string name="usercorreo">juanperez@ejemplo.com</string>
+    <string name="btnedit">Editar</string>
+    <string name="btnguardar2">Guardar</string>
+    <string name="username">Juan Pérez</string>
+</resources>

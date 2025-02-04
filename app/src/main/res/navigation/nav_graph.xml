@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.coinnect.LoginFragment"
+        android:label="Inicia Sesion"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment">
+            <argument
+                android:name="username"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.coinnect.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu">
+
+        <argument
+            android:name="username"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_cryptoListFragment"
+            app:destination="@id/cryptoListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.coinnect.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio">
+
+        <action
+            android:id="@+id/action_inicioFragment_to_cryptoListFragment"
+            app:destination="@id/cryptoListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/cryptoListFragment"
+        android:name="com.example.coinnect.CryptoListFragment"
+        android:label="Lista de Criptomonedas"
+        tools:layout="@layout/fragment_crypto_list" >
+        <action
+            android:id="@+id/action_cryptoListFragment_to_userinfoFragment"
+            app:destination="@id/userinfoFragment" />
+        <action
+            android:id="@+id/action_cryptoListFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_cryptoListFragment_to_detailFavFragment"
+            app:destination="@id/detailFavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userinfoFragment"
+        android:name="com.example.coinnect.userinfoFragment"
+        android:label="Mi cuenta"
+        tools:layout="@layout/fragment_userinfo" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.coinnect.DetailFragment"
+        android:label="Detalles Cryptomoneda"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/detailFavFragment"
+        android:name="com.example.coinnect.DetailFavFragment"
+        android:label="Detalles Adicionales"
+        tools:layout="@layout/fragment_detail_fav" />
+</navigation>
