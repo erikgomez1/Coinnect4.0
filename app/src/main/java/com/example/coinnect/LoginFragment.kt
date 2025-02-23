@@ -32,7 +32,7 @@ class LoginFragment : Fragment() {
 
                 findNavController().navigate(R.id.action_loginFragment_to_menuFragment, bundle)
             } else {
-                usernameEditText.error = "Username is required"
+                usernameEditText.error = getString(R.string.usereq)
             }
         }
 

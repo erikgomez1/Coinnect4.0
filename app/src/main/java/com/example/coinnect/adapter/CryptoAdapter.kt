@@ -31,15 +31,15 @@ class CryptoAdapter(
 
     override fun getItemCount(): Int = cryptoList.size
 
-    // Method to update the crypto list
+
     fun updateCryptoList(newList: List<Cryptocurrency>) {
         cryptoList = newList
-        notifyDataSetChanged()  // Refresh the entire list
+        notifyDataSetChanged()
     }
 
-    // Method to update a single item in the list
+
     fun updateItem(position: Int) {
-        notifyItemChanged(position)  // Notify that only the item at 'position' has changed
+        notifyItemChanged(position)
     }
 }
 

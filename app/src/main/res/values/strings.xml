@@ -1,27 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Coinnect</string>
-    <string name="btn1">Aceptar</string>
-    <string name="bienvenida">Bienvenido a Coinnect</string>
-    <string name="acerca"> Bienvenido %s, Esta usando la version 1.0 de Coinnect</string>
-    <string name="btn2"> Soporte</string>
-    <string name="informacion"> Esta app tiene como finalidad el crear un espacio de comunidad donde comentar,publicar y discutir temas sobre
-    criptomonedas,tendencias,estrategias de inversion ademas de tener informacion en tiempo real del propio mercado de forma</string>
+    <string name="btn1">Accept</string>
+    <string name="bienvenida">Welcome to Coinnect</string>
+    <string name="acerca">Welcome %s, You are using version 2.0 of Coinnect</string>
+    <string name="btn2">Support</string>
+    <string name="informacion">This app aims to create a community space to comment, post, and discuss topics about cryptocurrencies, trends, investment strategies, as well as provide real-time information about the market</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="cuenta">Mi Cuenta</string>
-    <string name="fav">Favoritos</string>
-    <string name="btnback">Volver</string>
+    <string name="cuenta">My Account</string>
+    <string name="fav">Favorites</string>
+    <string name="btnback">Back</string>
     <string name="cryptoname">Crypto Name</string>
     <string name="cryptoprice">Crypto Description</string>
     <string name="price2">Price: $0</string>
     <string name="notascrypto">Add your notes here</string>
     <string name="btnguardar">Save Notes</string>
-    <string name="cryptolist">Listado de Cryptomonedas</string>
-    <string name="btnlist">Haga Click para ver listado</string>
-    <string name="txtuser">Ingrese su nombre de usuario</string>
-    <string name="btnlogin">Ingresar</string>
-    <string name="userdescripcion">Soy un apasionado de las criptomonedas y la tecnología.</string>
-    <string name="usercorreo">juanperez@ejemplo.com</string>
-    <string name="btnedit">Editar</string>
-    <string name="btnguardar2">Guardar</string>
+    <string name="cryptolist">Cryptocurrency List</string>
+    <string name="btnlist">Click to view list</string>
+    <string name="txtuser">Enter your username</string>
+    <string name="btnlogin">Login</string>
+    <string name="userdescripcion">I am passionate about cryptocurrencies and technology.</string>
+    <string name="usercorreo">juanperez@example.com</string>
+    <string name="btnedit">Edit</string>
+    <string name="btnguardar2">Save</string>
     <string name="username">Juan Pérez</string>
+    <string name="addfav">%s added to favorites</string>
+    <string name="delfav">%s removed from favorites</string>
+    <string name="usereq">Username is required</string>
+    <string name="crypto_price">Price: %f</string>
+    <string name="notassave">Notes Saved</string>
 </resources>

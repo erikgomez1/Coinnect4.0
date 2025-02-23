@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coinnect</string>
+    <string name="btn1">Aceptar</string>
+    <string name="bienvenida">Bienvenido a Coinnect</string>
+    <string name="acerca">Bienvenido %s, Estás usando la versión 2.0 de Coinnect</string>
+    <string name="btn2">Soporte</string>
+    <string name="informacion">Esta app tiene como finalidad crear un espacio de comunidad donde comentar, publicar y discutir temas sobre criptomonedas, tendencias, estrategias de inversión, además de tener información en tiempo real del propio mercado de forma</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cuenta">Mi Cuenta</string>
+    <string name="fav">Favoritos</string>
+    <string name="btnback">Volver</string>
+    <string name="cryptoname">Nombre de la Cripto</string>
+    <string name="cryptoprice">Descripción de la Cripto</string>
+    <string name="price2">Precio: $0</string>
+    <string name="notascrypto">Añade tus notas aquí</string>
+    <string name="btnguardar">Guardar Notas</string>
+    <string name="cryptolist">Listado de Criptomonedas</string>
+    <string name="btnlist">Haz Click para ver el listado</string>
+    <string name="txtuser">Ingresa tu nombre de usuario</string>
+    <string name="btnlogin">Ingresar</string>
+    <string name="userdescripcion">Soy un apasionado de las criptomonedas y la tecnología.</string>
+    <string name="usercorreo">juanperez@ejemplo.com</string>
+    <string name="btnedit">Editar</string>
+    <string name="btnguardar2">Guardar</string>
+    <string name="username">Juan Pérez</string>
+    <string name="addfav">%s añadido a favoritos</string>
+    <string name="delfav">%s eliminado de favoritos</string>
+    <string name="usereq">El nombre de usuario es requerido</string>
+    <string name="crypto_price">Precio: %f</string>
+    <string name="notassave">Notas Guardadas</string>
+</resources>

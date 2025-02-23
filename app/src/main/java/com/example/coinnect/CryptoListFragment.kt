@@ -63,12 +63,12 @@ class CryptoListFragment : Fragment() {
 
         Toast.makeText(
             requireContext(),
-            if (cryptocurrency.isFavorite) "${cryptocurrency.cryptoName} added to favorites"
-            else "${cryptocurrency.cryptoName} removed from favorites",
+            if (cryptocurrency.isFavorite) getString(R.string.addfav ,cryptocurrency.cryptoName)
+            else getString(R.string.delfav , cryptocurrency.cryptoName),
             Toast.LENGTH_SHORT
         ).show()
 
-        // Update only the item that was clicked
+
         (binding.recyclerViewCryptos.adapter as CryptoAdapter).updateItem(position)
     }
 

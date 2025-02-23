@@ -23,35 +23,35 @@ class DetailFavFragment : Fragment() {
     ): View? {
         _binding = FragmentDetailFavBinding.inflate(inflater, container, false)
 
-        // Recuperar la criptomoneda seleccionada desde los argumentos
+
         arguments?.let {
             cryptocurrency = it.getParcelable("selectedCrypto")!!
         }
 
-        // Configurar los datos de la criptomoneda en la vista
-        binding.tvCryptoName.text = cryptocurrency.cryptoName
-        binding.tvCryptoPrice.text = "Price: $${cryptocurrency.cryptoPrice}"
 
-        // Mostrar las notas de la criptomoneda (si tiene)
+        binding.tvCryptoName.text = cryptocurrency.cryptoName
+        binding.tvCryptoPrice.text =   getString(R.string.crypto_price , cryptocurrency.cryptoPrice)
+
+
         binding.etNotes.setText(cryptocurrency.notes)
 
-        // Cargar la imagen de la criptomoneda con Glide
-        Glide.with(this)
-            .load(cryptocurrency.imageUrl)  // Aquí se usa la URL de la imagen
-            .into(binding.cryptoImage)  // Suponiendo que tienes un ImageView con id "cryptoImage" en tu layout
 
-        // Configurar el botón para guardar las notas
+        Glide.with(this)
+            .load(cryptocurrency.imageUrl)
+            .into(binding.cryptoImage)
+
+
         binding.btnSaveNotes.setOnClickListener {
             val notes = binding.etNotes.text.toString()
             cryptocurrency.notes = notes
 
-            Toast.makeText(requireContext(), "Notes saved!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.notassave), Toast.LENGTH_SHORT).show()
 
-            // Actualizar la lista de criptomonedas en el fragmento anterior
+
             val cryptoListFragment = parentFragmentManager.findFragmentByTag("CryptoListFragment") as CryptoListFragment?
             cryptoListFragment?.updateCryptoList(CryptocurrencyProvider.listaCryptos)
 
-            // Volver al fragmento anterior
+
             findNavController().popBackStack()
         }
 

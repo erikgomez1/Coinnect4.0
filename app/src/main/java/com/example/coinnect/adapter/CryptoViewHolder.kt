@@ -24,7 +24,7 @@ class CryptoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             .load(cryptoItem.imageUrl)
             .into(binding.ivCrypto)
 
-        // Set the favorite icon
+
         if (cryptoItem.isFavorite) {
             binding.btnFavorite.setImageResource(R.drawable.ic_favorite_filled)
         } else {

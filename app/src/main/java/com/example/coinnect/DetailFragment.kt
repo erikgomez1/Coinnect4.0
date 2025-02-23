@@ -25,12 +25,12 @@ class DetailFragment : Fragment() {
 
         selectedCrypto?.let {
             binding.cryptoName.text = it.cryptoName
-            binding.cryptoPrice.text = "Price: $${it.cryptoPrice}"
+            binding.cryptoPrice.text = getString(R.string.crypto_price, it.cryptoPrice)
 
-            // Usando Glide para cargar la imagen de la criptomoneda
+
             Glide.with(this)
-                .load(it.imageUrl) // URL de la imagen
-                .into(binding.cryptoImage) // ImageView en tu layout
+                .load(it.imageUrl)
+                .into(binding.cryptoImage)
         }
 
         return binding.root
